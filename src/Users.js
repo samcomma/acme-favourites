@@ -2,10 +2,9 @@ import React from 'react'
 
 const Users = ({ users, things, favourites })=> {
   const thingsMap = things.reduce((acc, thing)=> {
-    acc[thing.id] =thing
+    acc[thing.id] = thing
     return acc
   }, {})
-  console.log(thingsMap)
   return (
     <ul>
       {

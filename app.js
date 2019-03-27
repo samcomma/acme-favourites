@@ -44,7 +44,7 @@ app.get('/api/favourites', (req, res, next)=> {
 
 
 app.post('/api/users', (req, res, next)=> {
-  User.Create(req.body)
+  User.create(req.body)
     .then(user => res.send(user))
     .catch(next)
 })
